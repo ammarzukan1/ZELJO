@@ -1,0 +1,52 @@
+.about-wrapper {
+    background-color: #082a5c;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.about-square {
+    background-color: transparent;
+    border-radius: 10px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow:  0 0 5px 5px #0000;
+}
+
+.about-column {
+    align-self: stretch;
+    width: 30%;
+    min-height: 150px;
+}
+
+.heading-games {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.heading-games.heading-champs {
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.years2, .years {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #d9d9d9;
+    font-size: 18px;
+}
+
+.left-line, .right-line {
+    margin-bottom: 40px;
+}

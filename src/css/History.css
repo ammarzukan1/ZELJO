@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+}
+.years_paragraph_wrapper {
+    display: flex;
+    flex-direction: row;
+    color: #082a5c;
+    margin: 0 10% 0 10%;
+    gap: 20%;
+}
+
+.period, .paragraph {
+    color: #082a5c;
+    font-size: 16px;
+}
+
+.paragraph {
+    text-align: justify;
+}
+hr {
+    color: #082a5c;
+}
+.period {
+    text-align: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #082a5c;
+}
+
+.Line-left, .Line-right {
+    height: 100%;
+}

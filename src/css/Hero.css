@@ -1,0 +1,144 @@
+a {
+    white-space: nowrap;
+}
+.main-page {
+    z-index: 5;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: #0000;
+    background-image: url('../assets/Background.svg');
+    background-position: 0 0;
+    background-size: cover;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: block;
+    position: relative;
+    overflow: visible;
+}
+
+.navbarHero {
+    z-index: 2;
+    color: #d9d9d9;
+    padding: 20px 3%;
+    position: relative;
+}
+
+.navigation-left,
+.navigation-right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.navigation-right {
+    justify-content: flex-end;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #d9d9d9;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.container-navigation {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+.main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.main-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 4.6rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.main-subtitle {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 20px;
+    padding-right: 25px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-column {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-image {
+    max-width: 100%;
+}
+
+.triangle {
+    background-color: #0000;
+    border-top: 0 solid #0000;
+    border-bottom: 5vw solid #fff;
+    border-left: 50vw solid #0000;
+    border-right: 0 solid #0000;
+    flex: 1;
+}
+
+.triangle.triangle2 {
+    transform-style: preserve-3d;
+    border-bottom-color: #fff;
+    border-left-width: 50vw;
+    transform: rotate(0)rotateY(180deg)rotateZ(0);
+}
+
+.triangles {
+    flex-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: grid;
+    margin: 0;
+}
+
+.section {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    position: relative;
+}

@@ -1,0 +1,84 @@
+/*Slider (news) styling*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+    background: linear-gradient(
+            to top,
+            #d9d9d9,  /* Bottom color with transparency */
+            #fff   /* Top color fully transparent */
+    );
+    display: none;
+}
+.mySlides.active {
+    display: block;
+}
+
+.sliderWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(32, 33, 33, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #07255321; /* Black with 40% transparency */
+}
+
+/* Caption text */
+.text {
+    color: #202121;
+    padding: 8px 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+}
+
+.date {
+    color: #202121;
+    font-size: 13px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 10px;
+    background-color: #082a5c3b;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #082a5cd8;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
