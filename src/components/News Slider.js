@@ -1,18 +1,29 @@
 import React, { useState, useEffect } from "react";
 import klupa from '../assets/Zeljo klupa.jpg';
+<<<<<<< HEAD
 import utakmica from '../assets/utakmica.jpg';
+=======
+>>>>>>> 5626796 (new commit)
 import '../css/News Slider.css';
 
 const NewsSlider = () => {
     const [slideIndex, setSlideIndex] = useState(1);
+<<<<<<< HEAD
     const [slides] = useState([
+=======
+    const [slides, setSlides] = useState([
+>>>>>>> 5626796 (new commit)
         {
             image: klupa,
             title: "Povratak seniorske selekcije KK Željezničar nakon pet godina",
             date: "24.09.2024.",
         },
         {
+<<<<<<< HEAD
             image: utakmica,
+=======
+            image: klupa,
+>>>>>>> 5626796 (new commit)
             title: "Povratak seniorske selekcije KK Željezničar nakon pet godina",
             date: "24.09.2024.",
         },
@@ -43,6 +54,7 @@ const NewsSlider = () => {
         setSlideIndex(n);
     };
 
+<<<<<<< HEAD
     const handleTouchStart = (event) => {
         const startPosition = event.touches[0].clientX;
         const handleTouchEnd = (event) => {
@@ -80,6 +92,28 @@ const NewsSlider = () => {
                     ))}
                 </div>
 
+=======
+    return (
+        <section className="section">
+            <div className="slideshow-container">
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`mySlides fade ${slideIndex === index + 1 ? "active" : ""}`}
+                    >
+                        <div className="sliderWrapper">
+                            <div className="NewsPhoto">
+                                <img src={slide.image} className="NewsPhoto-image" />
+                                <div className="overlay"></div>
+                            </div>
+                            <div className="text">
+                                <h3>{slide.title}</h3>
+                                <p className="date">{slide.date}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+>>>>>>> 5626796 (new commit)
                 <div style={{ textAlign: "center" }}>
                     {slides.map((slide, index) => (
                         <span
@@ -94,4 +128,8 @@ const NewsSlider = () => {
     );
 };
 
+<<<<<<< HEAD
 export default NewsSlider;
+=======
+export default NewsSlider;
+>>>>>>> 5626796 (new commit)

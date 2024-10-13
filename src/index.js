@@ -14,10 +14,13 @@ import History from './components/History';
 import Header from "./components/Header";
 import SchedulePage from  "./components/Schedule Page";
 import NewsPage from "./components/News Page";
+<<<<<<< HEAD
 import TeamPage from "./components/Team Page";
 import Contact from "./components/Contact";
 import ClubStuff from "./components/Club Stuff";
 import InProgress from "./components/InProgress";
+=======
+>>>>>>> 5626796 (new commit)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -36,7 +39,11 @@ root.render(
 
                 {/* History Route */}
                 <Route
+<<<<<<< HEAD
                     path="/historija"
+=======
+                    path="/history"
+>>>>>>> 5626796 (new commit)
                     element={
                         <>
                             <Header />
@@ -47,7 +54,11 @@ root.render(
 
                 {/* Schedule Route */}
                 <Route
+<<<<<<< HEAD
                     path="/seniorke-raspored"
+=======
+                    path="/raspored"
+>>>>>>> 5626796 (new commit)
                     element={
                         <>
                             <Header />
@@ -55,6 +66,7 @@ root.render(
                         </>
                     }
                 />
+<<<<<<< HEAD
                 <Route
                     path="/seniori-raspored"
                     element={
@@ -64,6 +76,8 @@ root.render(
                         </>
                     }
                 />
+=======
+>>>>>>> 5626796 (new commit)
 
                 {/* Schedule Route */}
                 <Route
@@ -76,6 +90,7 @@ root.render(
                     }
                 />
 
+<<<<<<< HEAD
                 {/* Team Route */}
                 <Route
                     path="/seniorke"
@@ -137,6 +152,8 @@ root.render(
                     }
                 />
 
+=======
+>>>>>>> 5626796 (new commit)
             </Routes>
 
             <Footer />  {/* Footer appears on all pages */}

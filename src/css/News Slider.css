@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -7,6 +8,10 @@
     padding-bottom: 0;
     position: relative;
 }
+=======
+/*Slider (news) styling*/
+* {box-sizing:border-box}
+>>>>>>> 5626796 (new commit)
 
 /* Slideshow container */
 .slideshow-container {
@@ -14,6 +19,7 @@
     position: relative;
     margin: auto;
     justify-content: center;
+<<<<<<< HEAD
     overflow: hidden;
 }
 
@@ -52,12 +58,35 @@
     cursor: pointer;
     height: 100%;
 
+=======
+}
+
+/* Hide the images by default */
+.mySlides {
+    background: linear-gradient(
+            to top,
+            #d9d9d9,  /* Bottom color with transparency */
+            #fff   /* Top color fully transparent */
+    );
+    display: none;
+}
+.mySlides.active {
+    display: block;
+}
+
+.sliderWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(32, 33, 33, 0.5);
+>>>>>>> 5626796 (new commit)
 }
 
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     width: 100%;
     height: 100%;
     background-color: rgba(7, 37, 83, 0.2); /* Black with transparency */
@@ -86,6 +115,17 @@
 .text {
     color: #202121;
     padding: 8px 15px 15px;
+=======
+    width: 50%;
+    height: 100%;
+    background-color: #07255321; /* Black with 40% transparency */
+}
+
+/* Caption text */
+.text {
+    color: #202121;
+    padding: 8px 12px;
+>>>>>>> 5626796 (new commit)
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -99,6 +139,7 @@
     width: 50%;
 }
 
+<<<<<<< HEAD
 .Naslov {
     padding-left: 12px;
 }
@@ -111,18 +152,42 @@
 }
 
 
+=======
+.date {
+    color: #202121;
+    font-size: 13px;
+}
+
+>>>>>>> 5626796 (new commit)
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
+<<<<<<< HEAD
     margin: 10px 2px;
+=======
+    margin: 0 2px;
+    margin-top: 10px;
+>>>>>>> 5626796 (new commit)
     background-color: #082a5c3b;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
+<<<<<<< HEAD
 .dot.active, .dot:hover {
     background-color: #082a5cd8;
 }
+=======
+.active, .dot:hover {
+    background-color: #082a5cd8;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+>>>>>>> 5626796 (new commit)

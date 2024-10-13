@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Navbar base styles */
 .navbar {
     z-index: 2;
@@ -5,6 +6,15 @@
     padding: 15px;
     position: relative;
     background: linear-gradient(#1056bf,#082B5F);
+=======
+.navbar {
+    z-index: 2;
+    color: #d9d9d9;
+    padding: 20px 3%;
+    position: relative;
+    background: linear-gradient(#072653, #1056bf);
+
+>>>>>>> 5626796 (new commit)
 }
 
 .navigation-left,
@@ -17,17 +27,21 @@
 .navigation-right {
     justify-content: flex-end;
 }
+<<<<<<< HEAD
 .fa-caret-down{
     padding-right: 0;
     padding-left: 10px;
     margin: 0;
 }
 /* Nav link and caret icon */
+=======
+>>>>>>> 5626796 (new commit)
 .nav-link {
     display: flex;
     align-items: center;
     color: #d9d9d9;
     padding: 10px;
+<<<<<<< HEAD
     margin:0;
     font-size: 15px;
     font-weight: 400;
@@ -50,12 +64,26 @@
 }
 
 /* Navigation menu */
+=======
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+}
+
+>>>>>>> 5626796 (new commit)
 .nav-menu {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 30px;
+<<<<<<< HEAD
     position: relative; /* Relative to control dropdown positioning */
+=======
+>>>>>>> 5626796 (new commit)
 }
 
 .container-navigation {
@@ -68,6 +96,7 @@
 .menu-button {
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 /* Dropdown menu styles */
 .dropdown-menu {
@@ -131,3 +160,5 @@
     padding-bottom: 5px;
     margin: 0;
 }
+=======
+>>>>>>> 5626796 (new commit)

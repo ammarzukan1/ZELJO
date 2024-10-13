@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about {
     margin-top: 0;
     padding-top: 0;
@@ -6,11 +7,20 @@
     background-color: #082B5F;
     justify-content: space-around;
     padding: 0px;
+=======
+.about-wrapper {
+    background-color: #082a5c;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+>>>>>>> 5626796 (new commit)
     display: flex;
 }
 
 .about-square {
     background-color: transparent;
+<<<<<<< HEAD
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -30,6 +40,24 @@
     position: relative; /* Allows control over inner elements */
     overflow: hidden;
     min-height: 200px;
+=======
+    border-radius: 10px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow:  0 0 5px 5px #0000;
+}
+
+.about-column {
+    align-self: stretch;
+    width: 30%;
+    min-height: 150px;
+>>>>>>> 5626796 (new commit)
 }
 
 .heading-games {
@@ -55,6 +83,7 @@
 .left-line, .right-line {
     margin-bottom: 40px;
 }
+<<<<<<< HEAD
 .Trophy {
     height: 100%;
     width: 100%;
@@ -66,3 +95,5 @@
     filter: brightness(0.8);
     cursor: pointer;
 }
+=======
+>>>>>>> 5626796 (new commit)

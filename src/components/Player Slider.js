@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+<<<<<<< HEAD
 import '../css/Player Slider.css'; // Import your CSS
 import Portret1 from "../assets/portret1.webp";
 import Portret2 from "../assets/portret2.webp";
@@ -16,11 +17,18 @@ import Portret13 from "../assets/portret3.webp";
 import Portret14 from "../assets/portret3.webp";
 import Portret15 from "../assets/portret3.webp";
 import Portret16 from "../assets/portret3.webp";
+=======
+import '../css/Player Slider.css'; // Import CSS
+import Portret1 from "../assets/portret1.webp";
+import Portret2 from "../assets/portret2.webp";
+import Portret3 from "../assets/portret3.webp";
+>>>>>>> 5626796 (new commit)
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Roster = () => {
     const players = [
+<<<<<<< HEAD
         { imgSrc: Portret1, position: "Bek", name: "Šejla", surname: "Bujak" },
         { imgSrc: Portret2, position: "Bek", name: "Ester", surname: "Koffler" },
         { imgSrc: Portret3, position: "Bek", name: "Iman", surname: "Alimanović" },
@@ -70,12 +78,88 @@ const Roster = () => {
             slider.style.transform = `translateX(-${currentIndex * playerWidth}px)`;
         }
     }, [currentIndex, players.length]);
+=======
+        {
+            imgSrc: Portret1,
+            position: "Kapiten",
+            name: "Šejla",
+            surname: "Bujak",
+        },
+        {
+            imgSrc: Portret2,
+            position: "Bek",
+            name: "Ester",
+            surname: "Koffler",
+        },
+        {
+            imgSrc: Portret3,
+            position: "Bek",
+            name: "Iman",
+            surname: "Alimanović",
+        },
+        {
+            imgSrc: Portret1,
+            position: "Centar",
+            name: "Zerina",
+            surname: "Alispahić",
+        },
+        {
+            imgSrc: Portret2,
+            position: "Centar",
+            name: "Nejla",
+            surname: "Dević",
+        },
+        {
+            imgSrc: Portret3,
+            position: "Bek",
+            name: "Sorraja",
+            surname: "Salihagić",
+        },
+    ];
+
+    // Group players into slides with 3 players per slide
+    const groupedPlayers = [];
+    for (let i = 0; i < players.length; i += 3) {
+        groupedPlayers.push(players.slice(i, i + 3));
+    }
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const sliderRef = useRef(null);
+
+    // Function to update the slide position
+    const showSlide = (index) => {
+        if (index >= groupedPlayers.length) {
+            setCurrentIndex(0); // Loop back to the first slide
+        } else if (index < 0) {
+            setCurrentIndex(groupedPlayers.length - 1); // Go to the last slide
+        } else {
+            setCurrentIndex(index);
+        }
+        const slide = document.querySelectorAll(".player-slider");
+        slide.forEach((slide, i) => {
+            if (i === currentIndex) {
+                slide.classList.remove("hidden"); // Show the active slide
+            } else {
+                slide.classList.add("hidden"); // Hide the other slides
+            }
+        });
+    };
+
+    useEffect(() => {
+        const slider = sliderRef.current;
+        if (slider) {
+            const slideWidth = slider.offsetWidth;
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+    }, [currentIndex]);
+>>>>>>> 5626796 (new commit)
 
     return (
         <section id="Tim" className="section cc-roster">
             <div id="roster" className="container">
                 <div className="heading-wrapper">
                     <h1 className="h1 cc-schedule-heading">Naš tim</h1>
+<<<<<<< HEAD
                     <a href="/seniorke" className="button cc-tertiary w-button">Pročitaj više</a>
                 </div>
 
@@ -90,6 +174,25 @@ const Roster = () => {
                                         <div className="name">{`${player.name} ${player.surname}`}</div>
                                     </div>
                                 </div>
+=======
+                    <a href="/index.html" className="button cc-tertiary w-button">Pročitaj više</a>
+                </div>
+
+                <div className="slider w-slider">
+                    <div className="mask w-slider-mask" ref={sliderRef}>
+                        {groupedPlayers.map((group, index) => (
+                            <div key={index} className={`player-slider ${currentIndex === index ? '' : 'hidden'}`}>
+                                {group.map((player, idx) => (
+                                    <div key={idx} className="player-wrapper">
+                                        <img src={player.imgSrc} alt={player.name} className="portret" />
+                                        <div className="position-wrapper">
+                                            <h3 className="h3 cc-pos-heading">{player.position}</h3>
+                                            <div className="name">{player.name}</div>
+                                        </div>
+                                        <div className="surname">{player.surname}</div>
+                                    </div>
+                                ))}
+>>>>>>> 5626796 (new commit)
                             </div>
                         ))}
                     </div>

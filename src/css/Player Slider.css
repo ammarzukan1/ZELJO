@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 .section.cc-roster {
     padding: 0;
+=======
+.section {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.section.cc-roster {
+    padding: 5rem 0;
+>>>>>>> 5626796 (new commit)
 }
 
 .container {
@@ -9,6 +20,7 @@
 }
 
 .slider {
+<<<<<<< HEAD
     display: flex;
     flex-direction: row;
     position: relative;
@@ -26,13 +38,33 @@
 }
 .h1.cc-schedule-heading {
     color: #082B5F;
+=======
+    position: relative;
+    height: auto;
+}
+.heading-wrapper {
+    flex-direction: row;
+    flex: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.h1.cc-schedule-heading {
+    color: #174777;
+>>>>>>> 5626796 (new commit)
     object-fit: fill;
     align-items: center;
     margin-bottom: 0;
 }
 .button {
     color: #fff;
+<<<<<<< HEAD
     background-color: #082B5F;
+=======
+    background-color: #082a5c;
+>>>>>>> 5626796 (new commit)
     border-radius: 8px;
     box-shadow: 0 0 1px 1px #202121;
     padding: .7rem 1.2rem;
@@ -57,6 +89,7 @@
     flex-direction: row;
     position: relative;
 }
+<<<<<<< HEAD
 .mask {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -65,15 +98,33 @@
 .mask.slider-mask {
     flex-direction: row;
     overflow: hidden;
+=======
+
+.mask.slider-mask {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* Ensure content outside the mask is hidden */
+>>>>>>> 5626796 (new commit)
     position: relative;
 }
 
 .player-slider {
+<<<<<<< HEAD
     min-width: 100%;
     flex-shrink: 0;
     box-sizing: border-box;
 }
 
+=======
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    transition: transform 0.1s ease-in-out;
+    width: 100%;
+}
+/* Individual player styling */
+>>>>>>> 5626796 (new commit)
 .player-wrapper {
     width: 100%;
     padding: 1rem;
@@ -81,15 +132,23 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     align-items: center;
 }
 .portret {
     width: 250px;  /* Increased width */
     height: 300px; /* Increased height to maintain aspect ratio */
+=======
+    align-items: center; /* Center the content */
+}
+.portret {
+    width: 100%;
+>>>>>>> 5626796 (new commit)
     border-radius: 10px;
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 .heading-wrapper{
     display: flex;
     justify-content: space-between;
@@ -115,6 +174,49 @@
 .left-arrow,
 .right-arrow {
     color: #082B5F;
+=======
+.position-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+/* Position and name styling */
+.h3.cc-pos-heading {
+    font-size: 1.2rem;
+    color: #082a5c;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    margin-right: auto;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.surname {
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.name, .surname {
+    text-align: right;
+    margin-left: auto;
+    color: #082a5c;
+}
+
+/* Arrow styling */
+.left-arrow,
+.right-arrow {
+    color: #082a5c;
+>>>>>>> 5626796 (new commit)
     background-color: #fff;
     position: absolute;
     top: 44%;
@@ -127,22 +229,40 @@
 }
 
 .left-arrow {
+<<<<<<< HEAD
     left: 0.5rem;
 }
 
 .right-arrow {
     right: 0.5rem;
+=======
+    left: -1rem;
+}
+
+.right-arrow {
+    right: -1rem;
+>>>>>>> 5626796 (new commit)
 }
 
 .left-arrow i,
 .right-arrow i {
     font-size: 1.5rem;
+<<<<<<< HEAD
     color:#082B5F;
 }
 
 .left-arrow:hover,
 .right-arrow:hover {
     background-color: #082B5F;
+=======
+    color:#082a5c;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #072653;
+>>>>>>> 5626796 (new commit)
     color: #fff;
 }
 
