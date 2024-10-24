@@ -1,10 +1,9 @@
 import '../css/About Us.css';
 import doubleLines from '../assets/DoubleLines.svg';
-import history from '../assets/historja.jpeg';
 
 const AboutUs = () => {
     return (
-        <section id="o-nama" className="section about">
+        <section id="o-nama" className="about-section">
             <div className="about-wrapper">
                 <div className="about-column">
                     <div className="about-square">
@@ -15,9 +14,11 @@ const AboutUs = () => {
                         <p className="years2">1995, 1998, 1999, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011</p>
                     </div>
                 </div>
-                    <div className="about-square image">
-                        <a href="/historija" className="Trophy"><img src={history} loading="lazy" alt="Trophy" className="Trophy" /></a>
+                <div className="about-column">
+                    <div className="about-square">
+                        <img src="../assets/" loading="lazy" alt="Trophy" />
                     </div>
+                </div>
                 <div className="about-column">
                     <div className="about-square">
                         <div id="right-side-about-square" className="right-line">

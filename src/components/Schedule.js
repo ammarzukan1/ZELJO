@@ -1,4 +1,4 @@
-import logo from '../assets/SmallLogo.png';
+import logo from '../assets/Logo.svg';
 import '../css/Schedule.css';
 
 const Schedule = () => {
@@ -7,7 +7,7 @@ const Schedule = () => {
             <div id="rasporedCont" className="rasporedCont cc-schedule-container">
                 <div className="heading-wrapper">
                     <h1 data-w-id="naslov" className="h1 cc-schedule-heading">Raspored utakmica</h1>
-                    <a href="/seniorke-raspored" className="button cc-tertiary w-button">Pročitaj više</a>
+                    <a href="/index.html" className="button cc-tertiary w-button">View all</a>
                 </div>
                 <table className="table_component">
                     <tbody className="table_body">
