@@ -1,35 +1,30 @@
-.about {
-    margin-top: 0;
-    padding-top: 0;
-}
 .about-wrapper {
-    background-color: #082B5F;
+    background-color: #082a5c;
     justify-content: space-around;
-    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
     display: flex;
 }
 
 .about-square {
     background-color: transparent;
+    border-radius: 10px;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    min-height: 300px;
     display: flex;
     position: relative;
     overflow: hidden;
+    padding: 20px;
     box-shadow:  0 0 5px 5px #0000;
-    min-width: 20%;
 }
 
 .about-column {
-    margin: 10px;
-    padding: 20px;
     align-self: stretch;
     width: 30%;
-    height: 300px; /* Set a fixed height or a percentage */
-    position: relative; /* Allows control over inner elements */
-    overflow: hidden;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .heading-games {
@@ -54,15 +49,4 @@
 
 .left-line, .right-line {
     margin-bottom: 40px;
-}
-.Trophy {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    transition: filter 0.3s;
-}
-.Trophy:hover{
-    filter: brightness(0.8);
-    cursor: pointer;
 }
