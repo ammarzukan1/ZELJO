@@ -31,7 +31,7 @@
 }
 
 .h1.cc-schedule-heading {
-    color: #174777;
+    color: #082B5F;
     object-fit: fill;
     align-items: center;
     margin-bottom: 0;
@@ -39,7 +39,7 @@
 
 .button {
     color: #fff;
-    background-color: #082a5c;
+    background-color: #082B5F;
     border-radius: 8px;
     box-shadow: 0 0 1px 1px #202121;
     padding: .7rem 1.2rem;
@@ -74,23 +74,25 @@
 }
 
 .table_row {
-    background-color: #d9d9d9;
+    background-color: #ffffff;
     color: #082a5c;
+    box-shadow: 0 0 1px 1px #d9d9d9;
+    border-radius: 10px;
+    justify-content: center;
 }
 
 .table_row.cc-blue-row{
-    background-color: #082a5c;
+    background-color: #082B5F;
     color: #fff;
 }
 
 .table_cell {
     color: #d9d9d9;
     padding: 5px 20px;
-
 }
 
 .table_cell.blue {
-    color: #082a5c;
+    color: #082B5F;
 }
 
 .table_cell.blue.right-angle-b {
@@ -109,23 +111,28 @@
     border-top-right-radius: 10px;
 }
 .game_cell {
-    display: flex;
+    display: inline-flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .game_cell_w {
     font-size: 17px;
+    color: #d9d9d9;
+    align-items: center;
+    margin: 5px;
 }
 
 .game_cell_b {
     font-size: 17px;
-    color: #082a5c;
+    color: #082B5F;
+    margin: 5px;
 }
 .vs {
     font-size: 12px;
-    margin: 3px 3px;
+    margin: 5px;
 }
 
 .logo_mini {
