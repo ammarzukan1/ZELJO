@@ -1,14 +1,15 @@
 import '../css/Schedule.css';
-<<<<<<< HEAD
 
 import leftLines from '../assets/Left_lines.svg';
 import rightLines from '../assets/Right_lines.svg';
 import logo from "../assets/SmallLogo.png";
-=======
 import leftLines from '../assets/Left_lines.svg';
 import rightLines from '../assets/Right_lines.svg';
 import logo from "../assets/Logo.svg";
->>>>>>> 5626796 (new commit)
+
+import leftLines from '../assets/Left_lines.svg';
+import rightLines from '../assets/Right_lines.svg';
+import logo from "../assets/Logo.svg";
 
 const SchedulePage = () => {
     return(

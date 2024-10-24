@@ -8,28 +8,30 @@ body {
 }
 
 code {
-<<<<<<< HEAD
   font-family: 'Open Sans', serif,
     monospace;
 }
 body {
   font-family: 'Open Sans', serif;
-=======
+
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 body {
   font-family: 'Open Sans';
->>>>>>> 5626796 (new commit)
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  font-family: 'Open Sans';
+
 }
 a {
   text-decoration: none;
 }
 h1 {
-<<<<<<< HEAD
-  color: #082B5F;
-=======
->>>>>>> 5626796 (new commit)
+ color: #082B5F;
+
   z-index: 1000;
   margin-top: 0;
   padding-right: 20px;
@@ -42,11 +44,11 @@ p {
   color: #d9d9d9;
   line-height: 30px;
   font-size: 15px;
-<<<<<<< HEAD
   font-family: 'Open Sans', serif;
-=======
+
   font-family: 'Open Sans';
->>>>>>> 5626796 (new commit)
+  font-family: 'Open Sans';
+
 }
 img {
   max-width: 100%;

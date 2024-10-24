@@ -20,6 +20,7 @@
     justify-content: space-between;
     display: flex;
 }
+
 .heading-wrapper {
     flex-direction: row;
     flex: 0 auto;
@@ -31,11 +32,7 @@
 }
 
 .h1.cc-schedule-heading {
-<<<<<<< HEAD
-    color: #082B5F;
-=======
     color: #174777;
->>>>>>> 5626796 (new commit)
     object-fit: fill;
     align-items: center;
     margin-bottom: 0;
@@ -43,11 +40,7 @@
 
 .button {
     color: #fff;
-<<<<<<< HEAD
-    background-color: #082B5F;
-=======
     background-color: #082a5c;
->>>>>>> 5626796 (new commit)
     border-radius: 8px;
     box-shadow: 0 0 1px 1px #202121;
     padding: .7rem 1.2rem;
@@ -76,48 +69,28 @@
     text-align: center;
 }
 
-.table_component th, .table_componenttd {
+.table_component th, .table_component td {
     padding: 10px;
     border: 1px solid #d9d9d9;
 }
 
 .table_row {
-<<<<<<< HEAD
-    background-color: #ffffff;
-    color: #082a5c;
-    box-shadow: 0 0 1px 1px #d9d9d9;
-    border-radius: 10px;
-    justify-content: center;
-}
-
-.table_row.cc-blue-row{
-    background-color: #082B5F;
-=======
     background-color: #d9d9d9;
     color: #082a5c;
 }
 
-.table_row.cc-blue-row{
+.table_row.cc-blue-row {
     background-color: #082a5c;
->>>>>>> 5626796 (new commit)
     color: #fff;
 }
 
 .table_cell {
     color: #d9d9d9;
     padding: 5px 20px;
-<<<<<<< HEAD
-}
-
-.table_cell.blue {
-    color: #082B5F;
-=======
-
 }
 
 .table_cell.blue {
     color: #082a5c;
->>>>>>> 5626796 (new commit)
 }
 
 .table_cell.blue.right-angle-b {
@@ -135,47 +108,29 @@
 .table_cell.right-angle {
     border-top-right-radius: 10px;
 }
+
 .game_cell {
-<<<<<<< HEAD
-    display: inline-flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-=======
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
->>>>>>> 5626796 (new commit)
 }
 
 .game_cell_w {
     font-size: 17px;
-<<<<<<< HEAD
     color: #d9d9d9;
     align-items: center;
     margin: 5px;
-=======
->>>>>>> 5626796 (new commit)
 }
 
 .game_cell_b {
     font-size: 17px;
-<<<<<<< HEAD
-    color: #082B5F;
-    margin: 5px;
-}
-.vs {
-    font-size: 12px;
-    margin: 5px;
-=======
     color: #082a5c;
 }
+
 .vs {
     font-size: 12px;
     margin: 3px 3px;
->>>>>>> 5626796 (new commit)
 }
 
 .logo_mini {

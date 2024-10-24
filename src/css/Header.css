@@ -1,20 +1,10 @@
-<<<<<<< HEAD
 /* Navbar base styles */
-.navbar {
-    z-index: 2;
-    color: #d9d9d9;
-    padding: 15px;
-    position: relative;
-    background: linear-gradient(#1056bf,#082B5F);
-=======
 .navbar {
     z-index: 2;
     color: #d9d9d9;
     padding: 20px 3%;
     position: relative;
     background: linear-gradient(#072653, #1056bf);
-
->>>>>>> 5626796 (new commit)
 }
 
 .navigation-left,
@@ -27,44 +17,19 @@
 .navigation-right {
     justify-content: flex-end;
 }
-<<<<<<< HEAD
-.fa-caret-down{
+
+.fa-caret-down {
     padding-right: 0;
     padding-left: 10px;
     margin: 0;
 }
+
 /* Nav link and caret icon */
-=======
->>>>>>> 5626796 (new commit)
 .nav-link {
     display: flex;
     align-items: center;
     color: #d9d9d9;
     padding: 10px;
-<<<<<<< HEAD
-    margin:0;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-    position: relative;
-    transition: font-size 0.5ms;
-}
-.nav-link:hover {
-    color: #fff;
-    font-size: 15.5px;
-}
-.nav-link.w-nav-link {
-    width: 100%;
-    white-space: nowrap;
-}
-
-/* Ensure the dropdown becomes visible when hovering */
-.nav-link:hover + .dropdown-menu {
-    display: block; /* Make dropdown visible */
-}
-
-/* Navigation menu */
-=======
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
@@ -74,16 +39,13 @@
     font-weight: 600;
 }
 
->>>>>>> 5626796 (new commit)
+/* Navigation menu */
 .nav-menu {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 30px;
-<<<<<<< HEAD
     position: relative; /* Relative to control dropdown positioning */
-=======
->>>>>>> 5626796 (new commit)
 }
 
 .container-navigation {
@@ -96,7 +58,6 @@
 .menu-button {
     cursor: pointer;
 }
-<<<<<<< HEAD
 
 /* Dropdown menu styles */
 .dropdown-menu {
@@ -133,7 +94,6 @@
     background-color: rgba(217, 217, 217, 0.67);
 }
 
-
 /* Ensure dropdown links are styled properly */
 .dropdown-menu li a {
     color: #082a5c;
@@ -155,10 +115,7 @@
     display: block;
 }
 
-
 .navigation-button-wrap {
     padding-bottom: 5px;
     margin: 0;
 }
-=======
->>>>>>> 5626796 (new commit)

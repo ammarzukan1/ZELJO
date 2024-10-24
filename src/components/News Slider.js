@@ -1,29 +1,18 @@
 import React, { useState, useEffect } from "react";
 import klupa from '../assets/Zeljo klupa.jpg';
-<<<<<<< HEAD
-import utakmica from '../assets/utakmica.jpg';
-=======
->>>>>>> 5626796 (new commit)
+import utakmica from '../assets/utakmica.jpg'; // Reintroducing the 'utakmica' image from recover-branch
 import '../css/News Slider.css';
 
 const NewsSlider = () => {
     const [slideIndex, setSlideIndex] = useState(1);
-<<<<<<< HEAD
     const [slides] = useState([
-=======
-    const [slides, setSlides] = useState([
->>>>>>> 5626796 (new commit)
         {
             image: klupa,
             title: "Povratak seniorske selekcije KK Željezničar nakon pet godina",
             date: "24.09.2024.",
         },
         {
-<<<<<<< HEAD
-            image: utakmica,
-=======
-            image: klupa,
->>>>>>> 5626796 (new commit)
+            image: utakmica, // Using 'utakmica' from recover-branch
             title: "Povratak seniorske selekcije KK Željezničar nakon pet godina",
             date: "24.09.2024.",
         },
@@ -54,7 +43,7 @@ const NewsSlider = () => {
         setSlideIndex(n);
     };
 
-<<<<<<< HEAD
+    // Handle touch events for swiping
     const handleTouchStart = (event) => {
         const startPosition = event.touches[0].clientX;
         const handleTouchEnd = (event) => {
@@ -72,30 +61,6 @@ const NewsSlider = () => {
     return (
         <section className="section">
             <div className="slideshow-container" onTouchStart={handleTouchStart}>
-                <div className="slider-wrapper" style={{ transform: `translateX(-${(slideIndex - 1) * 100}%)`, transition: 'transform 0.5s ease-in-out' }}>
-                    {slides.map((slide, index) => (
-                        <div
-                            key={index}
-                            className={`mySlides ${slideIndex === index + 1 ? "active" : ""}`}
-                        >
-                            <div className="sliderWrapper">
-                                <div className="NewsPhoto">
-                                    <img src={slide.image} className="NewsPhoto-image" alt="News" />
-                                    <div className="overlay"></div>
-                                </div>
-                                <div className="text">
-                                    <h3 className="Naslov">{slide.title}</h3>
-                                    <p className="date">{slide.date}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-=======
-    return (
-        <section className="section">
-            <div className="slideshow-container">
                 {slides.map((slide, index) => (
                     <div
                         key={index}
@@ -113,7 +78,7 @@ const NewsSlider = () => {
                         </div>
                     </div>
                 ))}
->>>>>>> 5626796 (new commit)
+
                 <div style={{ textAlign: "center" }}>
                     {slides.map((slide, index) => (
                         <span
@@ -128,8 +93,4 @@ const NewsSlider = () => {
     );
 };
 
-<<<<<<< HEAD
 export default NewsSlider;
-=======
-export default NewsSlider;
->>>>>>> 5626796 (new commit)

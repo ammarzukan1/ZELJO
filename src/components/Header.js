@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import '../css/Header.css'; // Import the CSS file
-import logo from '../assets/SmallLogo.png';
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import logo from '../assets/Logo.svg';
 
 const Navbar = () => {
     // State to track which dropdown is open
@@ -14,22 +11,12 @@ const Navbar = () => {
         setDropdownOpen(dropdownOpen === dropdown ? null : dropdown); // Toggle the dropdown
     };
 
-=======
-import '../css/Header.css'; // Import the CSS file
-import logo from '../assets/Logo.svg';
-
-const Navbar = () => {
->>>>>>> 5626796 (new commit)
     return (
         <section className="main-page">
             <div className="navbar w-nav">
                 <div className="container-navigation">
                     <div className="navigation-left">
-<<<<<<< HEAD
-                        <a href="/" className="brand w-nav-brand w--current">
-=======
                         <a href="/index.html" className="brand w-nav-brand w--current">
->>>>>>> 5626796 (new commit)
                             <img
                                 width="49"
                                 loading="lazy"
@@ -43,7 +30,6 @@ const Navbar = () => {
                         <nav role="navigation" className="nav-menu w-nav-menu">
                             <a href="/" className="nav-link w-nav-link">Početna</a>
                             <a href="/novosti" className="nav-link w-nav-link">Novosti</a>
-<<<<<<< HEAD
 
                             {/* Prvi tim dropdown */}
                             <div
@@ -74,21 +60,13 @@ const Navbar = () => {
                                 </ul>
                             </div>
 
-=======
-                            <a href="/tim" className="nav-link w-nav-link">Tim</a>
-                            <a href="/raspored" className="nav-link w-nav-link">Raspored</a>
->>>>>>> 5626796 (new commit)
                             <a href="/historija" className="nav-link w-nav-link">Klub</a>
                             <a href="/" className="nav-link w-nav-link">Članske kartice</a>
                         </nav>
                     </div>
                     <div className="navigation-right">
                         <div className="navigation-button-wrap">
-<<<<<<< HEAD
-                            <a href="/kontakt" className="nav-link w-nav-link">Kontakt</a>
-=======
                             <a href="/index.html" className="nav-link w-nav-link">Kontakt</a>
->>>>>>> 5626796 (new commit)
                         </div>
                         <div className="menu-button w-nav-button">
                             <div className="w-icon-nav-menu"></div>
