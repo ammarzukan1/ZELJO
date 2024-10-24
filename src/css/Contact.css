@@ -1,0 +1,29 @@
+.contacts {
+    flex: 1;
+}
+.contacts p{
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px;
+    gap: 20px;
+}
+.map {
+    padding-right: 30px;
+    flex: 1; /* Makes the map take up the same width as the contact info */
+}
+.map > div {
+    height: 100%; /* Ensures the map fills the div */
+}
+
+.text-wrapper {
+    font-family: 'Open Sans', serif;
+    padding: 0px 30px 30px 30px;
+    text-align: justify;
+    font-size: 18px;
+}
