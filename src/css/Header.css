@@ -1,10 +1,10 @@
+/* Navbar base styles */
 .navbar {
     z-index: 2;
     color: #d9d9d9;
     padding: 20px 3%;
     position: relative;
     background: linear-gradient(#072653, #1056bf);
-
 }
 
 .navigation-left,
@@ -17,6 +17,14 @@
 .navigation-right {
     justify-content: flex-end;
 }
+
+.fa-caret-down {
+    padding-right: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+/* Nav link and caret icon */
 .nav-link {
     display: flex;
     align-items: center;
@@ -31,11 +39,13 @@
     font-weight: 600;
 }
 
+/* Navigation menu */
 .nav-menu {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 30px;
+    position: relative; /* Relative to control dropdown positioning */
 }
 
 .container-navigation {
@@ -47,4 +57,65 @@
 
 .menu-button {
     cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    left: 0; /* Align dropdown to the left of the .nav-link */
+    top: 85%; /* Position it directly below the .nav-link */
+    margin-top: 0.5rem; /* Optional: Add space between the link and the dropdown */
+    display: none; /* Initially hidden */
+    list-style-type: none;
+    padding: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    border-radius: 4px;
+}
+
+/* Dropdown item styles */
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: #082a5c;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    color: #082a5c;
+    background-color: rgba(217, 217, 217, 0.67);
+}
+
+/* Ensure dropdown links are styled properly */
+.dropdown-menu li a {
+    color: #082a5c;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, font-weight 0.2s ease, color 0.3s ease;
+}
+
+/* Ensure dropdown is hidden by default */
+.dropdown-menu {
+    display: none;
+}
+
+/* Show dropdown when the 'show' class is applied */
+.dropdown-menu.show {
+    display: block;
+}
+
+.navigation-button-wrap {
+    padding-bottom: 5px;
+    margin: 0;
 }

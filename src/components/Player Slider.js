@@ -1,49 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
-import '../css/Player Slider.css'; // Import CSS
+import '../css/Player Slider.css'; // Import your CSS
 import Portret1 from "../assets/portret1.webp";
 import Portret2 from "../assets/portret2.webp";
 import Portret3 from "../assets/portret3.webp";
+import Portret4 from "../assets/portret3.webp"; // Example images (adjust as needed)
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Roster = () => {
     const players = [
-        {
-            imgSrc: Portret1,
-            position: "Kapiten",
-            name: "Šejla",
-            surname: "Bujak",
-        },
-        {
-            imgSrc: Portret2,
-            position: "Bek",
-            name: "Ester",
-            surname: "Koffler",
-        },
-        {
-            imgSrc: Portret3,
-            position: "Bek",
-            name: "Iman",
-            surname: "Alimanović",
-        },
-        {
-            imgSrc: Portret1,
-            position: "Centar",
-            name: "Zerina",
-            surname: "Alispahić",
-        },
-        {
-            imgSrc: Portret2,
-            position: "Centar",
-            name: "Nejla",
-            surname: "Dević",
-        },
-        {
-            imgSrc: Portret3,
-            position: "Bek",
-            name: "Sorraja",
-            surname: "Salihagić",
-        },
+        { imgSrc: Portret1, position: "Bek", name: "Šejla", surname: "Bujak" },
+        { imgSrc: Portret2, position: "Bek", name: "Ester", surname: "Koffler" },
+        { imgSrc: Portret3, position: "Bek", name: "Iman", surname: "Alimanović" },
+        { imgSrc: Portret4, position: "Centar", name: "Zerina", surname: "Alispahić" },
+        { imgSrc: Portret2, position: "Bek", name: "Nejla", surname: "Dević" },
+        { imgSrc: Portret3, position: "Bek", name: "Sorraja", surname: "Salihagić" },
     ];
 
     // Group players into slides with 3 players per slide
@@ -87,7 +58,7 @@ const Roster = () => {
             <div id="roster" className="container">
                 <div className="heading-wrapper">
                     <h1 className="h1 cc-schedule-heading">Naš tim</h1>
-                    <a href="/index.html" className="button cc-tertiary w-button">Pročitaj više</a>
+                    <a href="/seniorke" className="button cc-tertiary w-button">Pročitaj više</a>
                 </div>
 
                 <div className="slider w-slider">

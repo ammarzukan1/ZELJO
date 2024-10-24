@@ -18,6 +18,7 @@
     position: relative;
     height: auto;
 }
+
 .heading-wrapper {
     flex-direction: row;
     flex: 0 auto;
@@ -27,12 +28,14 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
 .h1.cc-schedule-heading {
     color: #174777;
     object-fit: fill;
     align-items: center;
     margin-bottom: 0;
 }
+
 .button {
     color: #fff;
     background-color: #082a5c;
@@ -55,6 +58,7 @@
 .button.cc-tertiary {
     background-clip: border-box;
 }
+
 .slider.w-slider {
     display: flex;
     flex-direction: row;
@@ -76,6 +80,7 @@
     transition: transform 0.1s ease-in-out;
     width: 100%;
 }
+
 /* Individual player styling */
 .player-wrapper {
     width: 100%;
@@ -86,6 +91,7 @@
     flex-direction: column;
     align-items: center; /* Center the content */
 }
+
 .portret {
     width: 100%;
     border-radius: 10px;
@@ -155,10 +161,10 @@
 .left-arrow i,
 .right-arrow i {
     font-size: 1.5rem;
-    color:#082a5c;
+    color: #082a5c;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a background color */
 .left-arrow:hover,
 .right-arrow:hover {
     background-color: #072653;

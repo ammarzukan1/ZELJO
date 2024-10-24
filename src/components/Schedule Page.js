@@ -1,4 +1,12 @@
 import '../css/Schedule.css';
+
+import leftLines from '../assets/Left_lines.svg';
+import rightLines from '../assets/Right_lines.svg';
+import logo from "../assets/SmallLogo.png";
+import leftLines from '../assets/Left_lines.svg';
+import rightLines from '../assets/Right_lines.svg';
+import logo from "../assets/Logo.svg";
+
 import leftLines from '../assets/Left_lines.svg';
 import rightLines from '../assets/Right_lines.svg';
 import logo from "../assets/Logo.svg";
